@@ -1,0 +1,24 @@
+unction checkProbabilityTheory(count) {
+  var chet = 0;
+  var nechet = 0;
+
+  for (var i = 0; i < count; i++) {
+    var num = Math.floor(Math.random() * 901) + 100;
+
+    if (num % 2 == 0) {
+      chet++;
+    } else {
+      nechet++;
+    }
+  }
+
+  var chetPercent = (chet / count) * 100;
+  var nechetPercent = (nechet / count) * 100;
+
+  console.log("Кількість згенерованих чисел: " + count);
+  console.log("Парних чисел: " + chet);
+  console.log("Непарних чисел: " + nechet);
+  console.log("Відсоток парних до непарних: " + chetPercent.toFixed(1) + "% / " + nechetPercent.toFixed(1) + "%");
+}
+
+checkProbabilityTheory(100);
