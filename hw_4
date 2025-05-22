@@ -1,4 +1,4 @@
-unction checkProbabilityTheory(count) {
+function checkProbabilityTheory(count) {
   var chet = 0;
   var nechet = 0;
 
