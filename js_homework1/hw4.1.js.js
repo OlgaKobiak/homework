@@ -93,18 +93,39 @@
 //false || true повертаэ true
 //console.log(false && true || true); // Відповідь true
 
-false && (false || true)
+//false && (false || true)
 //Логічний оператор OR (||) повертає true, якщо хоча б один з операндів є true - true
 //Логічний оператор AND (&&) повертає true, якщо обидва операнди є true. Якщо хоча б один з операндів є false, результат буде false
-console.log(false && (false || true)); // відповідь false
+//.log(false && (false || true)); // відповідь false
 
-(+null == false) < 1 ** 5
+//(+null == false) < 1 ** 5
 //+null == false дає true
 //порівняння true < 1 дає false, оскільки true перетворюється на 1,а 1 не менше за 1
-console.log((+null == false) < 1 ** 5); //відповідь false
+//console.log((+null == false) < 1 ** 5); //відповідь false
 
 
+var productPrice1 = 101.5;
+var productPrice2 = 50.25;
+var productPrice3 = 10.11;
 
+// Кількість одиниць кожного продукту
+var productQuantity1 = 5;
+var productQuantity2 = 9;
+var productQuantity3 = 15;
+
+// Обчислення загальної вартості
+var totalValue = productPrice1 * productQuantity1 +
+                 productPrice2 * productQuantity2 +
+                 productPrice3 * productQuantity3;
+
+// Обчислення загальної кількості товарів
+var totalQuantity = productQuantity1 + productQuantity2 + productQuantity3;
+
+// Обчислення середньої ціни
+var averagePrice = totalValue / totalQuantity;
+
+// Виведення результату
+console.log("Середня ціна на продукти: " + averagePrice.toFixed(2));
 
 
 
