@@ -1,8 +1,7 @@
 var a = [
     {userName:"Test",lastName:"Test",email:"test.test@gmail.com"},
     {userName:"Dmitro",lastName:"Porohov",email:"dmitro.porohov@yahoo.com"},
-    {userName:"Andrii",lastName:"",email:"andrii@mail.ru"},
-    {userName:"Ivan",lastName:"Ivanov",email:"ivan.ivanov.test@gmail.com"}
+    {userName:"Andrii",lastName:"",email:"andrii@mail.ru"}
 ];
 var result = [];
 var r = /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)?@(gmail\.com|yahoo\.com)$/;
